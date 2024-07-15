@@ -1,0 +1,94 @@
+@font-face {
+    font-family: 'quicksandregular';
+    src: url('fonts/quicksand-regular-webfont.woff2') format('woff2'),
+        url('fonts/quicksand-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'league_spartanbold';
+    src: url('fonts/leaguespartan-bold-webfont.woff2') format('woff2'),
+        url('fonts/leaguespartan-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    height: 100vh;
+}
+
+img {
+    width: 400px;
+    height: 100vh;
+
+}
+
+.form {
+    margin: 0px 175px;
+    background-color: beige;
+    display: flex;
+    flex-shrink: 0;
+    /* padding: 0; */
+}
+
+h1 {
+    font-size: 3.2rem;
+    font-family: "league_spartanbold", serif;
+}
+
+h2 {
+    font-size: 2.4rem;
+    font-family: "league_spartanbold", serif;
+}
+
+p {
+    /* font-size: 1rem; */
+    line-height: 1.6;
+    /* word-spacing: 0.6rem; */
+    font-family: "quicksandregular", serif;
+}
+
+.sidebar {
+    width: 400px;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.name {
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 400px;
+    padding: 20px 0;
+    position: absolute;
+    top: 170px;
+}
+
+.credit {
+    position: absolute;
+    bottom: 15px;
+    left: 100px;
+    padding: 5px;
+    font-size: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+a {
+    color: white;
+}
+
+.form-info {
+    margin-top: 90px;
+    margin-right: 80px;
+    padding: 30px;
+}
