@@ -1,7 +1,27 @@
 @font-face {
-    font-family: 'quicksandregular';
-    src: url('fonts/quicksand-regular-webfont.woff2') format('woff2'),
-        url('fonts/quicksand-regular-webfont.woff') format('woff');
+    font-family: 'ralewaybold';
+    src: url('./fonts/raleway-bold-webfont.woff2') format('woff2'),
+         url('./fonts/raleway-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'ralewaymedium';
+    src: url('./fonts/raleway-medium-webfont.woff2') format('woff2'),
+         url('./fonts/raleway-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'ralewaysemibold';
+    src: url('./fonts/raleway-semibold-webfont.woff2') format('woff2'),
+         url('./fonts/raleway-semibold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -9,8 +29,8 @@
 
 @font-face {
     font-family: 'league_spartanbold';
-    src: url('fonts/leaguespartan-bold-webfont.woff2') format('woff2'),
-        url('fonts/leaguespartan-bold-webfont.woff') format('woff');
+    src: url('./fonts/leaguespartan-bold-webfont.woff2') format('woff2'),
+         url('./fonts/leaguespartan-bold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -35,9 +55,9 @@ img {
 .form {
     margin: 0px 175px;
     background-color: beige;
-    display: flex;
-    flex-shrink: 0;
-    /* padding: 0; */
+     display: flex;
+    flex-shrink: 0; 
+    padding: 0;
 }
 
 h1 {
@@ -54,7 +74,7 @@ p {
     /* font-size: 1rem; */
     line-height: 1.6;
     /* word-spacing: 0.6rem; */
-    font-family: "quicksandregular", serif;
+    font-family: "ralewaysemibold", serif;
 }
 
 .sidebar {
@@ -87,8 +107,48 @@ a {
     color: white;
 }
 
+.form-content {
+    margin-top: 90px;    
+}
+
 .form-info {
-    margin-top: 90px;
-    margin-right: 80px;
+    width: 70%;
     padding: 30px;
+   
+}
+
+.application {
+    margin-top: 18px;
+    background-color: white;
+    box-shadow: 0 10px 5px -5px rgb(170, 169, 169);
+}
+
+form {
+    padding: 20px 30px;
+}
+
+input[type=text] {
+    height: 20px;
+    width: 200px;
+}
+
+input, label {
+    display:block;
+    font-family: "ralewaymedium", serif;
+}
+
+label {
+    font-size: 10px;
+    margin-bottom: 2px;
+}
+
+.text-boxes {
+    margin: 10px;
+    padding-right: 20px;
+}
+
+.text-boxes-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -10px;
 }
