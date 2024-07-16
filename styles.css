@@ -4,7 +4,6 @@
          url('./fonts/raleway-bold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
 
 
@@ -14,7 +13,6 @@
          url('./fonts/raleway-medium-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
 
 
@@ -24,7 +22,6 @@
          url('./fonts/raleway-semibold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
 
 @font-face {
@@ -33,7 +30,6 @@
          url('./fonts/leaguespartan-bold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
 
 * {
@@ -49,13 +45,12 @@ body {
 img {
     width: 400px;
     height: 100vh;
-
 }
 
 .form {
     margin: 0px 175px;
     background-color: beige;
-     display: flex;
+    display: flex;
     flex-shrink: 0; 
     padding: 0;
 }
@@ -65,15 +60,8 @@ h1 {
     font-family: "league_spartanbold", serif;
 }
 
-h2 {
-    font-size: 2.4rem;
-    font-family: "league_spartanbold", serif;
-}
-
 p {
-    /* font-size: 1rem; */
     line-height: 1.6;
-    /* word-spacing: 0.6rem; */
     font-family: "ralewaysemibold", serif;
 }
 
@@ -120,7 +108,7 @@ a {
 .application {
     margin-top: 18px;
     background-color: white;
-    box-shadow: 0 10px 5px -5px rgb(170, 169, 169);
+    box-shadow: 0 7px 5px -5px rgb(170, 169, 169);
 }
 
 form {
@@ -150,5 +138,28 @@ label {
 .text-boxes-container {
     display: flex;
     flex-wrap: wrap;
+    flex-shrink: 0;
     margin-left: -10px;
 }
+
+button {
+    background-color: rgb(110, 154, 113);
+    color: white;
+    padding: 10px 40px;
+    border-radius: 5px;
+    font-family: "ralewaymedium", serif;
+    border: none;
+    box-shadow: 0 7px 5px -5px rgb(170, 169, 169);
+}
+
+.text, button {
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.log-in {
+    font-family: "ralewaybold", serif;
+    color: rgb(110, 154, 113);
+    margin-top: 30px;
+}
+
