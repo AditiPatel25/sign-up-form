@@ -24,14 +24,6 @@
     font-style: normal;
 }
 
-@font-face {
-    font-family: 'league_spartanbold';
-    src: url('./fonts/leaguespartan-bold-webfont.woff2') format('woff2'),
-        url('./fonts/leaguespartan-bold-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -48,8 +40,8 @@ body {
 }
 
 h1 {
-    font-size: 3.2rem;
-    font-family: "league_spartanbold", serif;
+    font-size: 3.8rem;
+    font-family: "ralewaybold", serif;
 }
 
 p {
@@ -69,22 +61,18 @@ p {
     color: white;
 }
 
-.name,
-.credit {
-    background-color: rgba(0, 0, 0, 0.6);
-}
-
 .name {
     width: 100%;
     padding: 20px 0;
     position: absolute;
     top: 170px;
+    background-color: rgba(181, 154, 118, 0.85);
 }
 
 .credit {
     position: absolute;
     bottom: 20px;
-    margin: 0 30%;
+    margin: 0 35%;
     padding: 5px;
     font-size: 10px;
     box-sizing: border-box;
@@ -143,6 +131,19 @@ input:invalid {
     box-shadow: 1px 1px 5px 1px rgb(198, 78, 78);
 }
 
+img {
+    width: 60px;
+    height: auto;
+    vertical-align: middle;
+    display: inline-block
+}
+
+.error-message {
+    font-family: "ralewaymedium";
+    font-size: 11px;
+    margin-top: 8px;
+    color: rgb(255, 8, 8);
+}
 
 input,
 label {
@@ -160,7 +161,7 @@ label {
 }
 
 button {
-    background-color: rgb(110, 154, 113);
+    background-color: rgb(181, 154, 118);
     color: white;
     padding: 10px 40px;
     border-radius: 5px;
@@ -178,6 +179,7 @@ button {
 
 .log-in {
     font-family: "ralewaybold", serif;
-    color: rgb(110, 154, 113);
+    color: rgb(181, 154, 118);
     margin-top: 30px;
+
 }

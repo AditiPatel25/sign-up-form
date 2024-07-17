@@ -12,11 +12,11 @@
 <body>
     <div class="sidebar">
         <div class="name">
-            <h1>ODIN</h1>
+            <h1><img src="./images/odin-logo.png" alt="odin-logo"> ODIN</h1>
         </div>
         <p class="credit">Photo by <a
-                href="https://unsplash.com/photos/a-shelf-full-of-records-in-a-room-zk-a1QqWcjo">James
-                Chan</a> on <a href="https://unsplash.com/">Unsplash</a></p>
+                href="https://unsplash.com/photos/yellow-and-brown-leaves-on-ground-81zFTui0clU">June
+                O</a> on <a href="https://unsplash.com/">Unsplash</a></p>
     </div>
     <div class="form-content">
         <div class="form-info">
@@ -30,7 +30,8 @@
             <form id="my_form" method="POST">
                 <div class="text-boxes">
                     <label for="first_name">FIRST NAME</label>
-                    <input type="text" name="first_name" id="first_name" placeholder="John" minlength="2" required>
+                    <input type="text" name="first_name" id="first_name" placeholder="John" minlength="2"
+                        autocomplete="given-name" required>
                 </div>
                 <div class="text-boxes">
                     <label for="last_name">LAST NAME</label>
@@ -38,19 +39,23 @@
                 </div>
                 <div class="text-boxes">
                     <label for="email">EMAIL</label>
-                    <input type="email" name="email" id="email" placeholder="apple@gmail.com" required>
+                    <input type="email" name="email" id="email" placeholder="apple@gmail.com" autocomplete="email">
                 </div>
                 <div class="text-boxes">
                     <label for="phone_number">PHONE NUMBER</label>
-                    <input type="tel" name="phone_number" id="phone_number" placeholder="1234567890" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required>
+                    <input type="tel" name="phone_number" id="phone_number" placeholder="1234567890"
+                        pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required>
                 </div>
                 <div class="text-boxes">
                     <label for="password">PASSWORD</label>
-                    <input type="password" name="password" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+                    <input type="password" name="password" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                        required>
+                    <div id="confirm_password_error" class="error-message"></div>
                 </div>
                 <div class="text-boxes">
                     <label for="confirm_password">CONFIRM PASSWORD</label>
-                    <input type="password" name="confirm_password" id="confirm_password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+                    <input type="password" name="confirm_password" id="confirm_password"
+                        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
                 </div>
             </form>
         </div>
