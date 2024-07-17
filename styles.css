@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'ralewaybold';
     src: url('./fonts/raleway-bold-webfont.woff2') format('woff2'),
-         url('./fonts/raleway-bold-webfont.woff') format('woff');
+        url('./fonts/raleway-bold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -10,7 +10,7 @@
 @font-face {
     font-family: 'ralewaymedium';
     src: url('./fonts/raleway-medium-webfont.woff2') format('woff2'),
-         url('./fonts/raleway-medium-webfont.woff') format('woff');
+        url('./fonts/raleway-medium-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -19,7 +19,7 @@
 @font-face {
     font-family: 'ralewaysemibold';
     src: url('./fonts/raleway-semibold-webfont.woff2') format('woff2'),
-         url('./fonts/raleway-semibold-webfont.woff') format('woff');
+        url('./fonts/raleway-semibold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -27,7 +27,7 @@
 @font-face {
     font-family: 'league_spartanbold';
     src: url('./fonts/leaguespartan-bold-webfont.woff2') format('woff2'),
-         url('./fonts/leaguespartan-bold-webfont.woff') format('woff');
+        url('./fonts/leaguespartan-bold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -38,21 +38,13 @@
 }
 
 body {
-    background-color: black;
     height: 100vh;
-}
-
-img {
-    width: 400px;
-    height: 100vh;
+    display: flex;
+    background-color: beige;
 }
 
 .form {
-    margin: 0px 175px;
-    background-color: beige;
     display: flex;
-    flex-shrink: 0; 
-    padding: 0;
 }
 
 h1 {
@@ -62,21 +54,28 @@ h1 {
 
 p {
     line-height: 1.6;
+    font-size: 20px;
     font-family: "ralewaysemibold", serif;
 }
 
 .sidebar {
-    width: 400px;
-    box-sizing: border-box;
-    flex-shrink: 0;
+    width: 45%;
+    height: 100vh;
+    background-image: url("./images/form-image.jpg");
     position: relative;
     text-align: center;
+    background-size: cover;
+    background-position: center;
     color: white;
 }
 
-.name {
+.name,
+.credit {
     background-color: rgba(0, 0, 0, 0.6);
-    width: 400px;
+}
+
+.name {
+    width: 100%;
     padding: 20px 0;
     position: absolute;
     top: 170px;
@@ -84,11 +83,11 @@ p {
 
 .credit {
     position: absolute;
-    bottom: 15px;
-    left: 100px;
+    bottom: 20px;
+    margin: 0 30%;
     padding: 5px;
     font-size: 10px;
-    background-color: rgba(0, 0, 0, 0.6);
+    box-sizing: border-box;
 }
 
 a {
@@ -96,50 +95,68 @@ a {
 }
 
 .form-content {
-    margin-top: 90px;    
+    margin-top: 90px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-content>div {
+    box-sizing: border-box;
 }
 
 .form-info {
     width: 70%;
     padding: 30px;
-   
+    margin-top: -10px;
 }
 
 .application {
-    margin-top: 18px;
     background-color: white;
     box-shadow: 0 7px 5px -5px rgb(170, 169, 169);
 }
 
 form {
-    padding: 20px 30px;
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 15px;
+    margin-top: -40px;
 }
 
-input[type=text] {
-    height: 20px;
-    width: 200px;
+input {
+    height: 25px;
+    width: 65%;
+    padding-inline-start: 5px;
+    border-radius: 5px;
+    border: 2px solid rgb(181, 154, 118);
 }
 
-input, label {
-    display:block;
+input:focus {
+    outline: none;
+    border: 2px solid rgb(71, 163, 170);
+    box-shadow: 1px 1px 5px 1px rgb(165, 171, 165);
+}
+
+input:invalid {
+    outline: none;
+    box-shadow: 1px 1px 5px 1px rgb(198, 78, 78);
+}
+
+
+input,
+label {
+    display: block;
     font-family: "ralewaymedium", serif;
 }
 
 label {
-    font-size: 10px;
-    margin-bottom: 2px;
+    font-size: 11px;
+    margin-bottom: 3px;
 }
 
 .text-boxes {
-    margin: 10px;
-    padding-right: 20px;
-}
-
-.text-boxes-container {
-    display: flex;
-    flex-wrap: wrap;
-    flex-shrink: 0;
-    margin-left: -10px;
+    flex: 0 1 calc(50% - 15px);
 }
 
 button {
@@ -147,12 +164,14 @@ button {
     color: white;
     padding: 10px 40px;
     border-radius: 5px;
-    font-family: "ralewaymedium", serif;
     border: none;
+    max-width: 200px;
     box-shadow: 0 7px 5px -5px rgb(170, 169, 169);
+    font-family: "ralewaysemibold", serif;
 }
 
-.text, button {
+.text,
+button {
     margin-left: 30px;
     margin-top: 30px;
 }
@@ -162,4 +181,3 @@ button {
     color: rgb(110, 154, 113);
     margin-top: 30px;
 }
-

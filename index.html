@@ -4,72 +4,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js-file.js" defer></script>
     <title>Sign-up form</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="js-file.js" defer=""></script>
 </head>
 
 <body>
-    <div class="screen">
-        <div class="form">
-            <div class="sidebar">
-                <img src="./images/form-image.jpg" alt="books">
-                <div class="name">
-                    <h1>ODIN</h1>
-                </div>
-                <div class="credit">
-                    <p>Photo by <a
-                            href="https://unsplash.com/photos/a-shelf-full-of-records-in-a-room-zk-a1QqWcjo">James
-                            Chan</a> on <a href="https://unsplash.com/">Unsplash</a></p>
-                </div>
-            </div>
-            <div class="form-content">
-                <div class="form-info">
-                    <p>This is not a real online service! You know you need something like this in your life to help you
-                        realize your deepest dreams. <br> Sign up <em>now</em> to get started!</p>
-                    <br>
-                    <p>You <em>know</em> you want to.</p>
-                </div>
-                <div class="application">
-                    <form>
-                        <p>Let's do this!</p>
-                        <div class="text-boxes-container">
-                        <div class="text-boxes">
-                            <label for="first_name">FIRST NAME</label>
-                            <input type="text" name="first_name" id="first_name">
-                        </div>
-                        <div class="text-boxes">
-                            <label for="_name">LAST NAME</label>
-                            <input type="text" name="first_name" id="first_name">
-                        </div>
-                        <div class="text-boxes">
-                            <label for="first_name">EMAIL</label>
-                            <input type="text" name="first_name" id="first_name">
-                        </div>
-                        <div class="text-boxes">
-                            <label for="first_name">PHONE NUMBER</label>
-                            <input type="text" name="first_name" id="first_name">
-                        </div>
-                        <div class="text-boxes">
-                            <label for="first_name">PASSWORD</label>
-                            <input type="text" name="first_name" id="first_name">
-                        </div>
-                        <div class="text-boxes">
-                            <label for="first_name">CONFIRM PASSWORD</label>
-                            <input type="text" name="first_name" id="first_name">
-                        </div>
-                    </div>
-                    </form>
-                </div>
-                <button>Create Account</button>
-                <p class="text">Already have an account? <span class="log-in">Log in</span></p>
-            </div>
-
-
+    <div class="sidebar">
+        <div class="name">
+            <h1>ODIN</h1>
         </div>
+        <p class="credit">Photo by <a
+                href="https://unsplash.com/photos/a-shelf-full-of-records-in-a-room-zk-a1QqWcjo">James
+                Chan</a> on <a href="https://unsplash.com/">Unsplash</a></p>
     </div>
-
-
+    <div class="form-content">
+        <div class="form-info">
+            <p>This is not a real online service! You know you need something like this in your life to help you
+                realize your deepest dreams. <br> Sign up <em>now</em> to get started!</p>
+            <br>
+            <p>You <em>know</em> you want to.</p>
+        </div>
+        <div class="application">
+            <p class="form-info">Let's do this!</p>
+            <form id="my_form" method="POST">
+                <div class="text-boxes">
+                    <label for="first_name">FIRST NAME</label>
+                    <input type="text" name="first_name" id="first_name" placeholder="John" minlength="2" required>
+                </div>
+                <div class="text-boxes">
+                    <label for="last_name">LAST NAME</label>
+                    <input type="text" name="last_name" id="last_name" placeholder="Doe" minlength="2" required>
+                </div>
+                <div class="text-boxes">
+                    <label for="email">EMAIL</label>
+                    <input type="email" name="email" id="email" placeholder="apple@gmail.com" required>
+                </div>
+                <div class="text-boxes">
+                    <label for="phone_number">PHONE NUMBER</label>
+                    <input type="tel" name="phone_number" id="phone_number" placeholder="1234567890" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required>
+                </div>
+                <div class="text-boxes">
+                    <label for="password">PASSWORD</label>
+                    <input type="password" name="password" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+                </div>
+                <div class="text-boxes">
+                    <label for="confirm_password">CONFIRM PASSWORD</label>
+                    <input type="password" name="confirm_password" id="confirm_password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+                </div>
+            </form>
+        </div>
+        <button>Create Account</button>
+        <p class="text">Already have an account? <span class="log-in">Log in</span></p>
+    </div>
 </body>
 
 </html>
